@@ -46,7 +46,6 @@ getent passwd %{name} >/dev/null || useradd -g %{name} -s /sbin/nologin -c "cite
 #in case of an upgrade (first installs new version, then deletes old version)
 has_service=$(chkconfig --list | grep %{name})
 if [ "$has_service" != "" ];then
-  service %{name} stop &> /dev/null
   chkconfig --del %{name} &> /dev/null
 fi
 
@@ -56,13 +55,11 @@ exit 0
 (
 cd /opt/%name &&
 chkconfig --add %{name} && chkconfig --level 345 %{name} on &&
-service %{name} start &&
 echo "service %{name} installed!"
 ) || exit 1
 
 %preun
 if [ "$1" = 0 ] ; then
-  service %{name} stop &> /dev/null
   chkconfig --del %{name} &> /dev/null
   /usr/sbin/userdel -r %{name} &> /dev/null
   echo "service %{name} removed"
@@ -70,9 +67,5 @@ fi
 exit 0
 
 %postun
-if [ "$1" -ge 1 ]; then
-  service %{name} restart &> /dev/null
-fi
-exit 0
 
 %changelog
