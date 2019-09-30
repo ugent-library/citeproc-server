@@ -1,0 +1,3296 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/harvard-leeds-beckett-university", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://skillsforlearning.leedsbeckett.ac.uk/local/Quote_Unquote.pdf", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "uri", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "author-date"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "generic-base"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                "presented at"
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "presented at"
+              }
+            }
+          ], 
+          "name": "terms", 
+          "attrs": {}
+        }
+      ], 
+      "name": "locale", 
+      "attrs": {
+        "xml:lang": "en"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "name", 
+                              "attrs": {
+                                "initialize-with": ". ", 
+                                "and": "symbol", 
+                                "name-as-sort-order": "all", 
+                                "delimiter": ", ", 
+                                "delimiter-precedes-last": "never"
+                              }
+                            }
+                          ], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "author"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "author"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "container-title"
+                          }
+                        }
+                      ], 
+                      "name": "else", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "entry-dictionary"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "title"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "legal_case legislation", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "title"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "container-title", 
+                    "prefix": ". ", 
+                    "suffix": " Bill"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "bill"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "name", 
+                              "attrs": {
+                                "initialize-with": ". ", 
+                                "and": "symbol", 
+                                "name-as-sort-order": "all", 
+                                "delimiter": ", ", 
+                                "delimiter-precedes-last": "never"
+                              }
+                            }
+                          ], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "author"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "author"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "container-title"
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "variable": "container-title"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "title"
+                          }
+                        }
+                      ], 
+                      "name": "else", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "webpage"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "initialize-with": ". ", 
+                        "and": "symbol", 
+                        "name-as-sort-order": "all", 
+                        "delimiter": ", ", 
+                        "delimiter-precedes-last": "never"
+                      }
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "composer"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "composer", 
+                "type": "song"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "initialize-with": ". ", 
+                        "and": "symbol", 
+                        "name-as-sort-order": "all", 
+                        "delimiter": ", ", 
+                        "delimiter-precedes-last": "never"
+                      }
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "author"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "URL", 
+                "type": "motion_picture", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "title"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "motion_picture"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "initialize-with": ". ", 
+                        "and": "symbol", 
+                        "name-as-sort-order": "all", 
+                        "delimiter": ", ", 
+                        "delimiter-precedes-last": "never"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "label", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "form": "short"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "editor"
+                          }
+                        }
+                      ], 
+                      "name": "substitute", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "author"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "author editor", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "publisher"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "publisher", 
+                "type": "book"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "title"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "sort-term"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "online", 
+                        "text-case": "capitalize-first"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "value": " discussion list"
+                              }
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "type": "personal_communication"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "value": " image"
+                              }
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "graphic"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "value": " blog"
+                              }
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "post-weblog"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "value": " video"
+                              }
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "motion_picture"
+                          }
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "URL"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "online"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "value": "Available from: "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "URL", 
+                    "prefix": "<", 
+                    "suffix": ">"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "accessed", 
+                        "suffix": " ", 
+                        "text-case": "capitalize-first"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "date-part", 
+                          "attrs": {
+                            "name": "day"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "date-part", 
+                          "attrs": {
+                            "name": "month"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "date-part", 
+                          "attrs": {
+                            "name": "year"
+                          }
+                        }
+                      ], 
+                      "name": "date", 
+                      "attrs": {
+                        "variable": "accessed", 
+                        "delimiter": " "
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "URL"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "access"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "font-style": "italic"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "chapter post-weblog entry-dictionary entry-encyclopedia article-journal article-newspaper article-magazine paper-conference", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "container-title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "number", 
+                  "attrs": {
+                    "variable": "edition", 
+                    "suffix": " ", 
+                    "form": "ordinal"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "variable": "edition", 
+                    "form": "short"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "is-numeric": "edition"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "label", 
+          "attrs": {
+            "variable": "page", 
+            "suffix": " ", 
+            "form": "short"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "page"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "page-range"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "label", 
+          "attrs": {
+            "variable": "locator", 
+            "suffix": " ", 
+            "form": "short"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "locator"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "locator-range"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher-place"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "container-title"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ": "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "webpage"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher-place"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ": "
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "publisher"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "font-style": "italic", 
+                    "text-case": "title"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "book legal_case legislation map musical_score motion_picture patent broadcast report song thesis webpage bill", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "text-case": "title"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "term": "volume", 
+                    "suffix": " ", 
+                    "form": "short"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "number", 
+                  "attrs": {
+                    "variable": "volume"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "volume"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "volume"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "volume"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "edition"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ", "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "entry-dictionary entry-encyclopedia", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "volume"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "edition"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ". "
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "volume-edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "event-date"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "event-date"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "issued"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "term": "no date", 
+                    "form": "short"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "year"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "macro": "sort-term"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "macro": "year"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "variable": "title"
+              }
+            }
+          ], 
+          "name": "sort", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "and": "symbol", 
+                        "delimiter-precedes-last": "never", 
+                        "form": "short", 
+                        "initialize-with": ". ", 
+                        "et-al-min": "3", 
+                        "name-as-sort-order": "all", 
+                        "et-al-use-first": "1", 
+                        "delimiter": ", ", 
+                        "delimiter-precedes-et-al": "never"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "author"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "editor"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "publisher"
+                          }
+                        }
+                      ], 
+                      "name": "substitute", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "composer"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "year"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "locator-range"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "type": "legal_case", 
+                        "match": "none"
+                      }
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": ", "
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "delimiter": "; ", 
+            "prefix": "(", 
+            "suffix": ")"
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "disambiguate-add-names": "true", 
+        "disambiguate-add-year-suffix": "true", 
+        "disambiguate-add-givenname": "true", 
+        "givenname-disambiguation-rule": "all-names-with-initials"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "macro": "sort-term"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "macro": "year"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "variable": "title"
+              }
+            }
+          ], 
+          "name": "sort", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "sort-term"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "year", 
+                        "prefix": " [", 
+                        "suffix": "]"
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "type": "legal_case"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "number", 
+                      "attrs": {
+                        "variable": "chapter-number", 
+                        "prefix": " (c. ", 
+                        "suffix": ")"
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "legislation"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "year", 
+                        "prefix": " (", 
+                        "suffix": ")"
+                      }
+                    }
+                  ], 
+                  "name": "else", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": " "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "publisher"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "page-range"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "value": "illus"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "URL", 
+                                    "match": "none"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "type": "graphic"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "title"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "author"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "container-title"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "day"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "month"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "delimiter": " "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": ", "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "post-weblog"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "container-title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": " "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "volume-edition"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "publisher"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "page-range"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "URL", 
+                                    "match": "none"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "entry-dictionary"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "title"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "form": "short"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "day"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "month"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "delimiter": " "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " ", 
+                                "font-style": "italic"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "personal_communication"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "title"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "author"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "container-title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "online"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "number", 
+                                  "attrs": {
+                                    "variable": "volume"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "number", 
+                                  "attrs": {
+                                    "variable": "issue", 
+                                    "prefix": "(", 
+                                    "suffix": ")"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "month"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "page-range"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "article-journal"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "number", 
+                              "attrs": {
+                                "variable": "volume"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "container-title", 
+                                "form": "short"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "page"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": " "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "legal_case"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "title"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "author"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "value": "sheet "
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "title", 
+                                                "form": "short"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "group", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "title-short author"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "scale"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "URL"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": ", "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "scale"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "URL", 
+                                "match": "none"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "collection-title", 
+                            "prefix": "(", 
+                            "suffix": ")"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "publisher"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "map"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "title"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "author"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "container-title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "online"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "day"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "month"
+                                  }
+                                }
+                              ], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued", 
+                                "delimiter": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "page-range"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "article-newspaper article-magazine", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "title"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "author"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "online"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "day"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "month"
+                                  }
+                                }
+                              ], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued", 
+                                "delimiter": " "
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "variable": "URL", 
+                    "type": "motion_picture", 
+                    "match": "all"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "name", 
+                                  "attrs": {
+                                    "and": "symbol", 
+                                    "delimiter": ", ", 
+                                    "delimiter-precedes-last": "never"
+                                  }
+                                }
+                              ], 
+                              "name": "names", 
+                              "attrs": {
+                                "variable": "author", 
+                                "prefix": "Directed by "
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "publisher"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "medium", 
+                                "prefix": "[", 
+                                "suffix": "]"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": " "
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "motion_picture"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "online"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "legislation"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "number", 
+                              "attrs": {
+                                "variable": "number"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "bill"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "title"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "author"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "number", 
+                          "attrs": {
+                            "variable": "number"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "patent"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "title"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "author"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "publisher"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "day"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "month"
+                              }
+                            }
+                          ], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "issued", 
+                            "delimiter": " "
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "broadcast"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "value": "[Digital audio file]"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "URL"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " "
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "publisher"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "medium", 
+                            "prefix": "[", 
+                            "suffix": "]"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "song"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "author container-title", 
+                                    "match": "any"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "online"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": " "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "publisher"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "webpage"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "else-if", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "type": "book"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "online"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "type": "entry-encyclopedia", 
+                                    "match": "none"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "term": "in", 
+                                        "prefix": ", ", 
+                                        "suffix": ": "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "container-title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "online"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "type": "entry-encyclopedia"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "term": "in", 
+                                                "prefix": ". ", 
+                                                "suffix": ": ", 
+                                                "text-case": "capitalize-first"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "children": [], 
+                                                              "name": "name", 
+                                                              "attrs": {
+                                                                "initialize-with": ". ", 
+                                                                "and": "symbol", 
+                                                                "name-as-sort-order": "all", 
+                                                                "delimiter": ", ", 
+                                                                "delimiter-precedes-last": "never"
+                                                              }
+                                                            }
+                                                          ], 
+                                                          "name": "names", 
+                                                          "attrs": {
+                                                            "variable": "container-author"
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "variable": "container-author"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "children": [
+                                                                {
+                                                                  "children": [], 
+                                                                  "name": "name", 
+                                                                  "attrs": {
+                                                                    "initialize-with": ". ", 
+                                                                    "and": "symbol", 
+                                                                    "name-as-sort-order": "all", 
+                                                                    "delimiter": ", ", 
+                                                                    "delimiter-precedes-last": "never"
+                                                                  }
+                                                                }
+                                                              ], 
+                                                              "name": "names", 
+                                                              "attrs": {
+                                                                "variable": "editor"
+                                                              }
+                                                            }, 
+                                                            {
+                                                              "children": [], 
+                                                              "name": "text", 
+                                                              "attrs": {
+                                                                "term": "editor", 
+                                                                "prefix": " ", 
+                                                                "form": "short"
+                                                              }
+                                                            }
+                                                          ], 
+                                                          "name": "group", 
+                                                          "attrs": {}
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "macro": "container-title"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "children": [
+                                                                {
+                                                                  "children": [
+                                                                    {
+                                                                      "children": [], 
+                                                                      "name": "date-part", 
+                                                                      "attrs": {
+                                                                        "name": "month", 
+                                                                        "suffix": " "
+                                                                      }
+                                                                    }, 
+                                                                    {
+                                                                      "children": [], 
+                                                                      "name": "date-part", 
+                                                                      "attrs": {
+                                                                        "name": "day", 
+                                                                        "suffix": ", "
+                                                                      }
+                                                                    }, 
+                                                                    {
+                                                                      "children": [], 
+                                                                      "name": "date-part", 
+                                                                      "attrs": {
+                                                                        "name": "year"
+                                                                      }
+                                                                    }
+                                                                  ], 
+                                                                  "name": "date", 
+                                                                  "attrs": {
+                                                                    "variable": "event-date", 
+                                                                    "font-style": "italic"
+                                                                  }
+                                                                }
+                                                              ], 
+                                                              "name": "if", 
+                                                              "attrs": {
+                                                                "variable": "event-date"
+                                                              }
+                                                            }, 
+                                                            {
+                                                              "children": [
+                                                                {
+                                                                  "children": [
+                                                                    {
+                                                                      "children": [], 
+                                                                      "name": "date-part", 
+                                                                      "attrs": {
+                                                                        "name": "month", 
+                                                                        "suffix": " "
+                                                                      }
+                                                                    }, 
+                                                                    {
+                                                                      "children": [], 
+                                                                      "name": "date-part", 
+                                                                      "attrs": {
+                                                                        "name": "day", 
+                                                                        "suffix": ", "
+                                                                      }
+                                                                    }, 
+                                                                    {
+                                                                      "children": [], 
+                                                                      "name": "date-part", 
+                                                                      "attrs": {
+                                                                        "name": "year"
+                                                                      }
+                                                                    }
+                                                                  ], 
+                                                                  "name": "date", 
+                                                                  "attrs": {
+                                                                    "variable": "issued", 
+                                                                    "font-style": "italic"
+                                                                  }
+                                                                }
+                                                              ], 
+                                                              "name": "else", 
+                                                              "attrs": {}
+                                                            }
+                                                          ], 
+                                                          "name": "choose", 
+                                                          "attrs": {}
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "type": "paper-conference"
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "group", 
+                                              "attrs": {
+                                                "delimiter": ", "
+                                              }
+                                            }
+                                          ], 
+                                          "name": "if", 
+                                          "attrs": {
+                                            "variable": "container-title"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "choose", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else-if", 
+                                  "attrs": {
+                                    "type": "chapter paper-conference", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "term": "presented at", 
+                                                "prefix": ". ", 
+                                                "suffix": ": ", 
+                                                "text-case": "capitalize-first"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "event"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "date-part", 
+                                                      "attrs": {
+                                                        "name": "month", 
+                                                        "suffix": " "
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [], 
+                                                      "name": "date-part", 
+                                                      "attrs": {
+                                                        "name": "day", 
+                                                        "suffix": ", "
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [], 
+                                                      "name": "date-part", 
+                                                      "attrs": {
+                                                        "name": "year"
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "date", 
+                                                  "attrs": {
+                                                    "variable": "issued"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "event-place"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "group", 
+                                              "attrs": {
+                                                "delimiter": ", ", 
+                                                "font-style": "italic"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "if", 
+                                          "attrs": {
+                                            "variable": "title"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "choose", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else-if", 
+                                  "attrs": {
+                                    "type": "speech"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "genre", 
+                                        "prefix": " [", 
+                                        "suffix": "]"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "type": "thesis"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "medium", 
+                                        "prefix": " [", 
+                                        "suffix": "]"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "medium", 
+                                    "type": "book"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "genre"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "number", 
+                                      "attrs": {
+                                        "variable": "number"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": " "
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "type": "report"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "collection-title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "number", 
+                                          "attrs": {
+                                            "variable": "volume"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {
+                                        "delimiter": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "edition"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ". "
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "type": "book"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "volume-edition"
+                                  }
+                                }
+                              ], 
+                              "name": "else", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "publisher"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "page-range"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "type": "speech", 
+                                "match": "none"
+                              }
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "access"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "prefix": " ", 
+                        "delimiter": ". ", 
+                        "suffix": "."
+                      }
+                    }
+                  ], 
+                  "name": "else", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {}
+        }
+      ], 
+      "name": "bibliography", 
+      "attrs": {
+        "hanging-indent": "true"
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "default-locale": "en-GB", 
+    "xmlns": "http://purl.org/net/xbiblio/csl", 
+    "version": "1.0", 
+    "page-range-format": "expanded", 
+    "class": "in-text"
+  }
+}

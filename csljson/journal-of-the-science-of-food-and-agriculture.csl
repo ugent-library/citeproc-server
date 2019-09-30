@@ -1,0 +1,1009 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "title-short", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/journal-of-the-science-of-food-and-agriculture", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/european-society-of-cardiology", 
+            "rel": "template"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "https://onlinelibrary.wiley.com/page/journal/10970010/homepage/forauthors.html#preparing", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "numeric"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "biology"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "issn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "eissn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                "available"
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "available at"
+              }
+            }
+          ], 
+          "name": "terms", 
+          "attrs": {}
+        }
+      ], 
+      "name": "locale", 
+      "attrs": {
+        "xml:lang": "en"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {
+                "and": "text", 
+                "initialize-with": "", 
+                "name-as-sort-order": "all", 
+                "sort-separator": " "
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "label", 
+              "attrs": {
+                "prefix": " (", 
+                "suffix": ")", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "editor"
+                  }
+                }
+              ], 
+              "name": "substitute", 
+              "attrs": {}
+            }
+          ], 
+          "name": "names", 
+          "attrs": {
+            "variable": "author"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "author"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "in", 
+                        "text-case": "capitalize-first"
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "type": "chapter paper-conference", 
+                    "match": "any"
+                  }
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "name", 
+                  "attrs": {
+                    "initialize-with": "", 
+                    "name-as-sort-order": "all", 
+                    "sort-separator": " ", 
+                    "delimiter": ", ", 
+                    "delimiter-precedes-last": "always"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "prefix": ", ", 
+                    "form": "short"
+                  }
+                }
+              ], 
+              "name": "names", 
+              "attrs": {
+                "variable": "editor", 
+                "suffix": "."
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ": "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "editor"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher-place", 
+                        "prefix": "[", 
+                        "suffix": "]"
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "type": "thesis"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher-place"
+                      }
+                    }
+                  ], 
+                  "name": "else", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "publisher"
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ": ", 
+            "suffix": ";"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "publisher"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "available at", 
+                        "text-case": "capitalize-first"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "URL"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "accessed", 
+                            "prefix": "[", 
+                            "suffix": "]", 
+                            "form": "text"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "delimiter": " "
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ": "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "webpage post-weblog", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "access"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "font-style": "italic"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "edition", 
+                    "prefix": " "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-magazine chapter paper-conference article-newspaper", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "form": "short", 
+                    "font-style": "italic", 
+                    "strip-periods": "true"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "article-journal"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title", 
+                            "form": "short"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "term": "section", 
+                                "form": "short", 
+                                "text-case": "capitalize-first"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "section"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": " "
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "delimiter": ". "
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "number"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ", "
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "bill legislation", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "suffix": ".", 
+                    "form": "short"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "container-title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "title"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "edition", 
+                    "prefix": ". "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-journal article-magazine chapter paper-conference article-newspaper", 
+                "match": "none"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "genre", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "thesis"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "number", 
+                      "attrs": {
+                        "variable": "edition", 
+                        "form": "ordinal"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "edition", 
+                        "form": "short"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "is-numeric": "edition"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "edition", 
+                    "suffix": "."
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "delimiter": " ", 
+                    "prefix": "(", 
+                    "suffix": ")"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-journal article-magazine article-newspaper", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "bill legislation", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "form": "short", 
+                        "name": "month", 
+                        "strip-periods": "true"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "delimiter": " "
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "report"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "date"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "page", 
+                    "prefix": ":"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-journal article-magazine article-newspaper", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "page", 
+                    "prefix": " p. "
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "pages"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "volume", 
+                    "prefix": " ", 
+                    "font-weight": "bold"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-journal article-magazine", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "journal-location"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "number", 
+                    "prefix": "Report No.: "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "report"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "report-details"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }
+          ], 
+          "name": "sort", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "delimiter": ",", 
+            "vertical-align": "sup"
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "collapse": "citation-number"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "author"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "title"
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": ". ", 
+                "suffix": ". "
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "editor"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "container-title"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "publisher"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "journal-location"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "pages"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "date", 
+                        "prefix": " "
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " "
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "report-details"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "access", 
+                "prefix": ". "
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "suffix": "."
+          }
+        }
+      ], 
+      "name": "bibliography", 
+      "attrs": {
+        "second-field-align": "flush"
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "default-locale": "en-GB", 
+    "version": "1.0", 
+    "xmlns": "http://purl.org/net/xbiblio/csl", 
+    "class": "in-text", 
+    "page-range-format": "expanded"
+  }
+}

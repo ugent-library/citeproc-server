@@ -1,0 +1,1605 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/european-journal-of-ultrasound", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/current-gene-therapy", 
+            "rel": "template"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://ultraschall.thieme.de/documents/10157/10820/UiM-Autorenrichtlinien2016.pdf/8cf116e9-c862-4626-bc36-945a971495af", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "numeric"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "medicine"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "issn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "eissn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                "cited"
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "accessed"
+              }
+            }
+          ], 
+          "name": "terms", 
+          "attrs": {}
+        }
+      ], 
+      "name": "locale", 
+      "attrs": {
+        "xml:lang": "en"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "variable": "locator", 
+                    "suffix": " ", 
+                    "form": "short"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "locator"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "is-numeric": "locator"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "locator"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "page"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "if", 
+              "attrs": {
+                "type": "legislation"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "initialize-with": "", 
+                        "name-as-sort-order": "all", 
+                        "sort-separator": " "
+                      }
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "author"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "author", 
+                "type": "entry-encyclopedia", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "initialize-with": "", 
+                        "name-as-sort-order": "all", 
+                        "sort-separator": " "
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "label", 
+                      "attrs": {
+                        "prefix": ", "
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "editor"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "composer"
+                          }
+                        }
+                      ], 
+                      "name": "substitute", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "author", 
+                    "font-style": "italic"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "author editor composer", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "author"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "author"
+                      }
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "entry-dictionary entry-encyclopedia", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "suffix": ","
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "book", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "post-weblog", 
+                "match": "none"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "term": "in", 
+                "text-case": "capitalize-first"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "initialize-with": "", 
+                        "name-as-sort-order": "all", 
+                        "sort-separator": " "
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "label", 
+                      "attrs": {
+                        "prefix": " (", 
+                        "suffix": ")", 
+                        "form": "short", 
+                        "text-case": "capitalize-first"
+                      }
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "editor"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title"
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " ", 
+                "suffix": "."
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ": "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "editor-container"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title-short", 
+                            "strip-periods": "true"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "container-title-short"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title"
+                          }
+                        }
+                      ], 
+                      "name": "else", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-journal"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "editor-container"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "author", 
+                "type": "entry-encyclopedia", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "editor-container"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "chapter"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "authority", 
+                    "suffix": " "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "number", 
+                    "suffix": ","
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "patent", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "suffix": " "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "year"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "term": "online", 
+                    "prefix": "[", 
+                    "suffix": "]", 
+                    "text-case": "capitalize-first"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "container-title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "online", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "report"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "genre", 
+                        "prefix": "[", 
+                        "suffix": "]"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "online", 
+                        "prefix": "[", 
+                        "suffix": "]"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ", "
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "genre", 
+                "type": "thesis", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "medium", 
+                        "prefix": "[", 
+                        "suffix": "]"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "online", 
+                        "prefix": "[", 
+                        "suffix": "]"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ", "
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "medium"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "online", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "material"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "if", 
+                      "attrs": {
+                        "type": "legislation bill", 
+                        "match": "any"
+                      }
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "URL"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "online"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "number", 
+                      "attrs": {
+                        "variable": "edition", 
+                        "form": "ordinal"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "edition", 
+                        "form": "short"
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "is-numeric": "edition"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "edition"
+                      }
+                    }
+                  ], 
+                  "name": "else", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": " "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "publisher-place"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "city"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "publisher"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "publisher"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "month", 
+                        "form": "short"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "day"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "form": "text"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "legislation bill patent", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "month", 
+                        "form": "short"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "day"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "delimiter": " "
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "article-newspaper broadcast", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "suffix": ";"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "chapter article-journal", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "year"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "if", 
+              "attrs": {
+                "type": "legislation bill", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "accessed"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "date-part", 
+                          "attrs": {
+                            "name": "year"
+                          }
+                        }
+                      ], 
+                      "name": "date", 
+                      "attrs": {
+                        "variable": "accessed", 
+                        "delimiter": " "
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " ", 
+                    "prefix": "[", 
+                    "suffix": "]."
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "variable": "URL"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "accessed"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "author"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title"
+                          }
+                        }
+                      ], 
+                      "name": "else", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "entry-encyclopedia"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "suffix": ";"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "post-weblog"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "entry"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "volume"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "page"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ": "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "article-journal article-magazine", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "section"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "page"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ":"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "article-newspaper"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "book", 
+                        "form": "short"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "volume"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " ", 
+                    "suffix": ", "
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "page"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "chapter entry-dictionary entry-encyclopedia", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "number", 
+                  "attrs": {
+                    "variable": "volume"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "day", 
+                        "form": "numeric-leading-zeros"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "month", 
+                        "form": "numeric-leading-zeros"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "prefix": " af ", 
+                    "delimiter": "/"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "legislation"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "number", 
+                  "attrs": {
+                    "variable": "number"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "day", 
+                        "form": "numeric-leading-zeros"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "month", 
+                        "form": "numeric-leading-zeros"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued", 
+                    "prefix": ". ", 
+                    "delimiter": "/"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "bill"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "locator"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "available at", 
+                        "text-case": "capitalize-first"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "URL", 
+                        "text-decoration": "none"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ": "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "legislation bill", 
+                "match": "none"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "url"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "variable": "citation-label"
+              }
+            }
+          ], 
+          "name": "sort", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "page", 
+                "prefix": ", "
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "delimiter": ", ", 
+            "prefix": "[", 
+            "suffix": "]"
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "collapse": "citation-number"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "author"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "title"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "container-title"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "delimiter": ". "
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "material"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "edition"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "city"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "publisher", 
+                                    "suffix": ","
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "type": "book"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "city"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "publisher", 
+                                    "suffix": ";"
+                                  }
+                                }
+                              ], 
+                              "name": "else", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "delimiter": ": "
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "year"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "entry"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ". "
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {
+                        "delimiter": " "
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "locator"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "accessed"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "url"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "type": "webpage post-weblog", 
+                        "match": "any"
+                      }
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " ", 
+                "suffix": "."
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {}
+        }
+      ], 
+      "name": "bibliography", 
+      "attrs": {
+        "et-al-min": "4", 
+        "et-al-use-first": "3", 
+        "delimiter-precedes-et-al": "never", 
+        "second-field-align": "flush"
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "default-locale": "en-GB", 
+    "version": "1.0", 
+    "xmlns": "http://purl.org/net/xbiblio/csl", 
+    "class": "in-text", 
+    "page-range-format": "expanded"
+  }
+}

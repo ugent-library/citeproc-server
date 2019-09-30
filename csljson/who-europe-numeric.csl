@@ -1,0 +1,1366 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/who-europe-numeric", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "https://github.com/citation-style-language/styles/pull/170", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "numeric"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "medicine"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "summary", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {
+                "initialize-with": "", 
+                "name-as-sort-order": "all", 
+                "sort-separator": " ", 
+                "delimiter": ", ", 
+                "delimiter-precedes-last": "always"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "label", 
+              "attrs": {
+                "prefix": ", ", 
+                "form": "short"
+              }
+            }
+          ], 
+          "name": "names", 
+          "attrs": {
+            "variable": "editor"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "editor"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "name", 
+                          "attrs": {
+                            "initialize-with": "", 
+                            "name-as-sort-order": "all", 
+                            "sort-separator": " ", 
+                            "delimiter": ", ", 
+                            "delimiter-precedes-last": "always"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "label", 
+                          "attrs": {
+                            "form": "short", 
+                            "strip-periods": "true"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "names", 
+                              "attrs": {
+                                "variable": "editor"
+                              }
+                            }
+                          ], 
+                          "name": "substitute", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "names", 
+                      "attrs": {
+                        "variable": "author"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "suffix": "."
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "call-number", 
+                "match": "none"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "author"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "URL"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "value": "accessed "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "day", 
+                                "suffix": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "month", 
+                                "suffix": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "year"
+                              }
+                            }
+                          ], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "accessed"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ", "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "URL"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "access"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "value": "("
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "series"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "access"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": "; "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "value": ")"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "URL collection-title collection-number", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "accessSeries"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "archive_location", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "archive_location", 
+                "type": "book", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "font-style": "italic"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "genre", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "thesis", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "font-style": "italic"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "bill book graphic legal_case report", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "suffix": " [web site]"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "webpage", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "medium", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "broadcast", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "font-style": "italic"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "medium", 
+                    "prefix": " [", 
+                    "suffix": "]"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "song motion_picture", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "publisher-place"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "publisher"
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ", "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "publisher"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "number", 
+                      "attrs": {
+                        "variable": "edition", 
+                        "form": "ordinal"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "edition", 
+                        "form": "short"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "is-numeric": "edition"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "edition", 
+                    "suffix": "."
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "collection-title"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "collection-number", 
+                        "prefix": ", No. "
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "collection-title collection-number", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "series"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }
+          ], 
+          "name": "sort", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "citation-number"
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "font-style": "italic", 
+            "delimiter": ",", 
+            "prefix": "(", 
+            "suffix": ")"
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "collapse": "citation-number"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "citation-number", 
+                "suffix": ". "
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "author", 
+                    "suffix": " "
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "title"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "edition", 
+                                "prefix": ", "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "editor", 
+                                "prefix": " (", 
+                                "suffix": ")"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "suffix": "."
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "publisher", 
+                            "prefix": " "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "page", 
+                                "prefix": ":"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "prefix": ", "
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "type": "bill book graphic legal_case motion_picture song report thesis", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "title", 
+                            "suffix": "."
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "term": "in", 
+                                "suffix": ": ", 
+                                "text-case": "capitalize-first"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "editor"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "container-title", 
+                                "prefix": " ", 
+                                "font-style": "italic", 
+                                "suffix": "."
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "volume", 
+                                "prefix": "Vol", 
+                                "suffix": "."
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "edition", 
+                                "prefix": ","
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "collection-title", 
+                                "suffix": "."
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "publisher"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "date-part", 
+                                          "attrs": {
+                                            "name": "year"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "date", 
+                                      "attrs": {
+                                        "variable": "issued"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "page", 
+                                        "prefix": ":"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "prefix": ", ", 
+                                    "suffix": "."
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "prefix": " ", 
+                                "suffix": "."
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "prefix": " "
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "chapter", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "title", 
+                            "suffix": "."
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "term": "in", 
+                                        "text-case": "capitalize-first", 
+                                        "prefix": " ", 
+                                        "suffix": ": "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "editor", 
+                                        "suffix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "container-title", 
+                                        "font-style": "italic", 
+                                        "suffix": "."
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "volume", 
+                                        "prefix": "Vol", 
+                                        "suffix": "."
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "edition", 
+                                        "prefix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "collection-title", 
+                                        "suffix": "."
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "publisher", 
+                                            "prefix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "date-part", 
+                                                  "attrs": {
+                                                    "name": "year"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "date", 
+                                              "attrs": {
+                                                "variable": "issued"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "page", 
+                                                "prefix": ":"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "group", 
+                                          "attrs": {
+                                            "prefix": ", ", 
+                                            "suffix": "."
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "editor"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "event", 
+                                        "font-style": "italic", 
+                                        "suffix": "."
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "publisher", 
+                                            "prefix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "date-part", 
+                                                  "attrs": {
+                                                    "name": "year"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "date", 
+                                              "attrs": {
+                                                "variable": "issued"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "group", 
+                                          "attrs": {
+                                            "prefix": ", "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "prefix": " "
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "paper-conference", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "title", 
+                            "suffix": "."
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "note", 
+                            "prefix": " "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "year"
+                              }
+                            }
+                          ], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "issued", 
+                            "prefix": ", "
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "webpage", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "title", 
+                                "suffix": ". "
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "font-style": "italic"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "publisher-place", 
+                                    "prefix": "(", 
+                                    "suffix": ")"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " ", 
+                                "suffix": ", "
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "day", 
+                                        "suffix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "month", 
+                                        "suffix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "year"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "section", 
+                                "prefix": ", Section "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "page", 
+                                "prefix": ":"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "suffix": "."
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "article-newspaper broadcast", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "title"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "editor"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "suffix": "."
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "container-title", 
+                                "font-style": "italic"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "date-part", 
+                                      "attrs": {
+                                        "name": "year"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "volume"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "issue", 
+                                        "prefix": "(", 
+                                        "suffix": ")"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "prefix": ", "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "prefix": ", "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "page", 
+                                "prefix": ":"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "prefix": " ", 
+                            "suffix": "."
+                          }
+                        }
+                      ], 
+                      "name": "else", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "accessSeries", 
+                    "prefix": " "
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "suffix": "."
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {}
+        }
+      ], 
+      "name": "bibliography", 
+      "attrs": {
+        "hanging-indent": "false", 
+        "et-al-use-first": "1", 
+        "et-al-min": "4"
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "default-locale": "en-GB", 
+    "demote-non-dropping-particle": "sort-only", 
+    "class": "in-text", 
+    "version": "1.0", 
+    "xmlns": "http://purl.org/net/xbiblio/csl"
+  }
+}

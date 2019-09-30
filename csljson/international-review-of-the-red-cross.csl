@@ -1,0 +1,1755 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/international-review-of-the-red-cross", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/journal-of-the-history-of-collections", 
+            "rel": "template"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "https://www.icrc.org/en/international-review/contributors", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "contributor", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "note"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "sociology"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "issn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "eissn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "style-options", 
+          "attrs": {
+            "punctuation-in-quote": "false"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [
+                "trans."
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "translator", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                "ed. and trans."
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "editortranslator", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                "c."
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "chapter", 
+                "form": "short"
+              }
+            }
+          ], 
+          "name": "terms", 
+          "attrs": {}
+        }
+      ], 
+      "name": "locale", 
+      "attrs": {
+        "xml:lang": "en"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {
+                "and": "text", 
+                "initialize": "false", 
+                "initialize-with": "."
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "et-al", 
+              "attrs": {
+                "font-style": "italic"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "label", 
+              "attrs": {
+                "prefix": " (", 
+                "form": "short", 
+                "strip-periods": "false", 
+                "suffix": ")"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "translator"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "editor"
+                  }
+                }
+              ], 
+              "name": "substitute", 
+              "attrs": {}
+            }
+          ], 
+          "name": "names", 
+          "attrs": {
+            "variable": "author"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "author"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "label", 
+                      "attrs": {
+                        "form": "short", 
+                        "suffix": ". ", 
+                        "strip-periods": "false"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "name", 
+                      "attrs": {
+                        "and": "text", 
+                        "initialize-with": "."
+                      }
+                    }
+                  ], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "editor translator"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "editor translator", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "editor-translator"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "term": "in", 
+                "suffix": " "
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "name", 
+                  "attrs": {
+                    "and": "text", 
+                    "initialize-with": ".", 
+                    "delimiter": ", "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "prefix": " (", 
+                    "form": "short", 
+                    "strip-periods": "false", 
+                    "suffix": ")"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "names", 
+                      "attrs": {
+                        "variable": "editor"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "names", 
+                      "attrs": {
+                        "variable": "translator"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "names", 
+                      "attrs": {
+                        "variable": "container-author"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "macro": "title"
+                      }
+                    }
+                  ], 
+                  "name": "substitute", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "names", 
+              "attrs": {
+                "variable": "editor"
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": " "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "container-editor"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "font-style": "italic"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "book graphic legal_case motion_picture report song", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title"
+                  }
+                }
+              ], 
+              "name": "else-if", 
+              "attrs": {
+                "type": "bill legislation treaty", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "title", 
+                    "quotes": "true"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "title"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "collection-title"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "collection-number", 
+            "prefix": " "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "collection"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "presented at"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "event"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "event-place", 
+                    "prefix": ", "
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "paper-conference", 
+                "match": "all"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher"
+                      }
+                    }, 
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "variable": "publisher-place"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": ", "
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "publisher"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "date-part", 
+              "attrs": {
+                "name": "day", 
+                "form": "numeric-leading-zeros"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "date-part", 
+              "attrs": {
+                "name": "month"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "date-part", 
+              "attrs": {
+                "name": "year"
+              }
+            }
+          ], 
+          "name": "date", 
+          "attrs": {
+            "variable": "issued", 
+            "delimiter": " "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "date"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "variable": "number-of-volumes"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "term": "volume", 
+                "plural": "true", 
+                "form": "short", 
+                "strip-periods": "true"
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": " "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "volumes"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "label", 
+                              "attrs": {
+                                "variable": "page", 
+                                "suffix": " ", 
+                                "form": "short"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "page"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "term": "at", 
+                                "prefix": ", ", 
+                                "suffix": " "
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "page"
+                      }
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }, 
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "variable": "locator", 
+                    "suffix": " ", 
+                    "form": "short"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "locator"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "locator"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "pageref"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "label", 
+          "attrs": {
+            "variable": "locator", 
+            "suffix": " ", 
+            "form": "short"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "locator"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "pageref-subsequent"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "variable": "volume", 
+                    "form": "short", 
+                    "text-case": "capitalize-first"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "volume"
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " "
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "label", 
+                  "attrs": {
+                    "variable": "issue", 
+                    "form": "short", 
+                    "text-case": "capitalize-first"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "issue"
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " "
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ", "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "volref"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "font-style": "italic"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "chapter paper-conference", 
+                "match": "any"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "variable": "container-title", 
+                    "font-style": "italic"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "container"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "term": "available at", 
+                            "suffix": ": "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "URL", 
+                            "prefix": " ", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "month"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "day"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "date-part", 
+                              "attrs": {
+                                "name": "year"
+                              }
+                            }
+                          ], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "accessed", 
+                            "prefix": "(all internet references were accessed in ", 
+                            "suffix": ")", 
+                            "form": "text", 
+                            "date-parts": "year-month"
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "variable": "URL", 
+                        "match": "any"
+                      }
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "type": "webpage", 
+                "match": "any"
+              }
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "access"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "term": "ibid"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "pageref-subsequent"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }
+                      ], 
+                      "name": "if", 
+                      "attrs": {
+                        "position": "ibid-with-locator", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "term": "ibid"
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "position": "ibid", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "author"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "author", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "publisher"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "else", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "disambiguate": "true", 
+                                    "match": "any"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "value": "above note"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "first-reference-note-number", 
+                                    "prefix": " "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " "
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "pageref-subsequent"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "locator": "page chapter", 
+                                    "match": "any"
+                                  }
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "position": "subsequent"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "title"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "container-title"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "day"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "month"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued", 
+                                "delimiter": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "note", 
+                                "prefix": "(entered into force ", 
+                                "suffix": ")"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "treaty legislation", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "container-title"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "number"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "day"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "month"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued", 
+                                "delimiter": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "pageref"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "bill", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "authority"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "title"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "number", 
+                                "prefix": "Case No. "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "references"
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "note"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "day"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "month"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date-part", 
+                                  "attrs": {
+                                    "name": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued", 
+                                "delimiter": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "macro": "pageref"
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {
+                            "delimiter": ", "
+                          }
+                        }
+                      ], 
+                      "name": "else-if", 
+                      "attrs": {
+                        "type": "legal_case", 
+                        "match": "any"
+                      }
+                    }, 
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "macro": "author"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "genre"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "number", 
+                                        "prefix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "publisher"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "collection-title"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "date"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "pageref"
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "type": "report thesis manuscript", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "editor-translator"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "container"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "volumes"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "collection"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "volref"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "publisher"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "date"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {
+                                        "delimiter": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "pageref"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }
+                              ], 
+                              "name": "else-if", 
+                              "attrs": {
+                                "type": "book graphic motion_picture song", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "container-editor"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "container"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "collection"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "volref"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "volumes"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "publisher"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "date"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {
+                                        "delimiter": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "pageref"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }
+                              ], 
+                              "name": "else-if", 
+                              "attrs": {
+                                "type": "chapter paper-conference", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "container"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "date"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "macro": "pageref"
+                                  }
+                                }
+                              ], 
+                              "name": "else-if", 
+                              "attrs": {
+                                "type": "article-newspaper article-magazine", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "publisher"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "container", 
+                                            "suffix": ","
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "collection"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "macro": "volref"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {
+                                        "delimiter": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "access"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "date"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "volumes"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "macro": "pageref"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {
+                                    "delimiter": ", "
+                                  }
+                                }
+                              ], 
+                              "name": "else", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "else", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "choose", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": ", "
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "delimiter": "; ", 
+            "suffix": "."
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "et-al-min": "4", 
+        "et-al-use-first": "1", 
+        "disambiguate-add-names": "true"
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "default-locale": "en-US", 
+    "xmlns": "http://purl.org/net/xbiblio/csl", 
+    "version": "1.0", 
+    "page-range-format": "expanded", 
+    "demote-non-dropping-particle": "sort-only", 
+    "class": "note"
+  }
+}

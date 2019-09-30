@@ -1,0 +1,707 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "title-short", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/vita-latina-auteurs-anciens", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://vitalatina.upv.univ-montp3.fr/page-3/", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "note"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "humanities"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "issn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "eissn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "summary", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "published", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                "\u00e9d."
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "editor", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                "trad."
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "translator", 
+                "form": "verb-short"
+              }
+            }, 
+            {
+              "children": [
+                "dans"
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "in"
+              }
+            }, 
+            {
+              "children": [
+                "pas de date"
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "no date"
+              }
+            }
+          ], 
+          "name": "terms", 
+          "attrs": {}
+        }
+      ], 
+      "name": "locale", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {
+                "and": "symbol", 
+                "name-as-sort-order": "all", 
+                "sort-separator": ", ", 
+                "delimiter": ", ", 
+                "delimiter-precedes-last": "never"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "editor"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "translator"
+                  }
+                }
+              ], 
+              "name": "substitute", 
+              "attrs": {}
+            }
+          ], 
+          "name": "names", 
+          "attrs": {
+            "variable": "author"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "contributeurs-tri"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {
+                "and": "symbol", 
+                "initialize-with": ". ", 
+                "name-as-sort-order": "all", 
+                "sort-separator": " ", 
+                "delimiter": ", "
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "label", 
+              "attrs": {
+                "prefix": " (", 
+                "suffix": ")", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "editor"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "names", 
+                  "attrs": {
+                    "variable": "translator"
+                  }
+                }
+              ], 
+              "name": "substitute", 
+              "attrs": {}
+            }
+          ], 
+          "name": "names", 
+          "attrs": {
+            "variable": "author", 
+            "suffix": ", "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "auteurs"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "date-part", 
+                      "attrs": {
+                        "name": "year"
+                      }
+                    }
+                  ], 
+                  "name": "date", 
+                  "attrs": {
+                    "variable": "issued"
+                  }
+                }
+              ], 
+              "name": "if", 
+              "attrs": {
+                "variable": "issued"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "term": "no date", 
+                    "form": "short"
+                  }
+                }
+              ], 
+              "name": "else", 
+              "attrs": {}
+            }
+          ], 
+          "name": "choose", 
+          "attrs": {}
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "date-publication"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "title", 
+            "font-style": "italic", 
+            "text-case": "title"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "titre"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "name", 
+                          "attrs": {
+                            "and": "symbol", 
+                            "initialize-with": ". ", 
+                            "delimiter": ", ", 
+                            "delimiter-precedes-last": "never", 
+                            "font-variant": "small-caps"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "label", 
+                          "attrs": {
+                            "prefix": " (", 
+                            "suffix": ")", 
+                            "form": "short"
+                          }
+                        }
+                      ], 
+                      "name": "names", 
+                      "attrs": {
+                        "variable": "editor"
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "variable": "editor"
+                  }
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "name", 
+                          "attrs": {
+                            "and": "symbol", 
+                            "initialize-with": ". ", 
+                            "delimiter": ", ", 
+                            "delimiter-precedes-last": "never", 
+                            "font-variant": "small-caps"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "label", 
+                          "attrs": {
+                            "prefix": " (", 
+                            "suffix": ")", 
+                            "form": "short"
+                          }
+                        }
+                      ], 
+                      "name": "names", 
+                      "attrs": {
+                        "variable": "translator"
+                      }
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "variable": "translator"
+                  }
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ", "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "auteurs-secondaires"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "publisher-place", 
+            "form": "short"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "lieu-edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "publisher", 
+            "form": "short"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "editeur"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "collection-title", 
+            "form": "short"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "titre-collection"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "collection-number"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "numero-collection"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "lieu-edition"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "editeur"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "titre-collection", 
+                "quotes": "true"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "numero-collection"
+              }
+            }
+          ], 
+          "name": "group", 
+          "attrs": {
+            "delimiter": ", "
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "publication"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "volume"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "volume"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "text", 
+          "attrs": {
+            "variable": "edition", 
+            "vertical-align": "sup"
+          }
+        }
+      ], 
+      "name": "macro", 
+      "attrs": {
+        "name": "numero-edition"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "value": "non disponible"
+                      }
+                    }
+                  ], 
+                  "name": "group", 
+                  "attrs": {
+                    "delimiter": " "
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " : "
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "delimiter": " ; ", 
+            "suffix": "."
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "et-al-min": "4", 
+        "et-al-use-first": "1", 
+        "disambiguate-add-year-suffix": "false"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "key", 
+              "attrs": {
+                "macro": "contributeurs-tri"
+              }
+            }
+          ], 
+          "name": "sort", 
+          "attrs": {}
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "auteurs", 
+                "prefix": "\u2003\u2003"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "titre"
+                  }
+                }, 
+                {
+                  "children": [], 
+                  "name": "text", 
+                  "attrs": {
+                    "macro": "volume"
+                  }
+                }
+              ], 
+              "name": "group", 
+              "attrs": {
+                "delimiter": " ", 
+                "suffix": ", "
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "auteurs-secondaires", 
+                "suffix": ", "
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "publication", 
+                "suffix": ", "
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "date-publication"
+              }
+            }, 
+            {
+              "children": [], 
+              "name": "text", 
+              "attrs": {
+                "macro": "numero-edition"
+              }
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "suffix": "."
+          }
+        }
+      ], 
+      "name": "bibliography", 
+      "attrs": {
+        "et-al-min": "11", 
+        "et-al-use-first": "7", 
+        "entry-spacing": "0", 
+        "subsequent-author-substitute": "\u2014 "
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "default-locale": "fr-FR", 
+    "demote-non-dropping-particle": "sort-only", 
+    "class": "note", 
+    "version": "1.0", 
+    "xmlns": "http://purl.org/net/xbiblio/csl"
+  }
+}

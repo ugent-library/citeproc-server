@@ -1,0 +1,4074 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [], 
+          "name": "title", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "title-short", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "id", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "http://www.zotero.org/styles/leiden-journal-of-international-law", 
+            "rel": "self"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "link", 
+          "attrs": {
+            "href": "https://www.cambridge.org/core/services/aop-file-manager/file/575adb7dfcaa6b122ec738b3", 
+            "rel": "documentation"
+          }
+        }, 
+        {
+          "children": [
+            {
+              "children": [], 
+              "name": "name", 
+              "attrs": {}
+            }, 
+            {
+              "children": [], 
+              "name": "email", 
+              "attrs": {}
+            }
+          ], 
+          "name": "author", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "citation-format": "note"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "category", 
+          "attrs": {
+            "field": "law"
+          }
+        }, 
+        {
+          "children": [], 
+          "name": "issn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "eissn", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "summary", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "updated", 
+          "attrs": {}
+        }, 
+        {
+          "children": [], 
+          "name": "rights", 
+          "attrs": {
+            "license": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        }
+      ], 
+      "name": "info", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    "ch."
+                  ], 
+                  "name": "single", 
+                  "attrs": {}
+                }, 
+                {
+                  "children": [
+                    "chs."
+                  ], 
+                  "name": "multiple", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "chapter", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    "s"
+                  ], 
+                  "name": "single", 
+                  "attrs": {}
+                }, 
+                {
+                  "children": [
+                    "ss"
+                  ], 
+                  "name": "multiple", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "section", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    "para."
+                  ], 
+                  "name": "single", 
+                  "attrs": {}
+                }, 
+                {
+                  "children": [
+                    "paras."
+                  ], 
+                  "name": "multiple", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "paragraph", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    "tr."
+                  ], 
+                  "name": "single", 
+                  "attrs": {}
+                }, 
+                {
+                  "children": [
+                    "trs."
+                  ], 
+                  "name": "multiple", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "translator", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                "edn."
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "edition", 
+                "form": "short"
+              }
+            }, 
+            {
+              "children": [
+                "et al"
+              ], 
+              "name": "term", 
+              "attrs": {
+                "name": "et-al"
+              }
+            }
+          ], 
+          "name": "terms", 
+          "attrs": {}
+        }
+      ], 
+      "name": "locale", 
+      "attrs": {}
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "term": "ibid", 
+                                    "suffix": ",", 
+                                    "text-case": "capitalize-first"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": " para "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "locator": "paragraph", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": " at ", 
+                                            "suffix": "."
+                                          }
+                                        }
+                                      ], 
+                                      "name": "else", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " "
+                              }
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "type": "legal_case", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "term": "ibid", 
+                                    "suffix": ",", 
+                                    "text-case": "capitalize-first"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": " article "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "locator": "paragraph", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": " page "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "else", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "legislation", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "term": "ibid", 
+                                    "suffix": ",", 
+                                    "text-case": "capitalize-first"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "locator", 
+                                    "prefix": " at "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "position": "ibid-with-locator"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "term": "ibid", 
+                        "strip-periods": "true", 
+                        "text-case": "capitalize-first"
+                      }
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "position": "ibid"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "name", 
+                                          "attrs": {
+                                            "form": "short"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "names", 
+                                      "attrs": {
+                                        "variable": "author"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "title-short", 
+                                        "prefix": ", ", 
+                                        "text-case": "title"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date", 
+                                      "attrs": {
+                                        "variable": "issued", 
+                                        "prefix": " (", 
+                                        "suffix": ")", 
+                                        "form": "text", 
+                                        "date-parts": "year"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "locator", 
+                                    "prefix": ", page  "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {
+                                "delimiter": " "
+                              }
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "type": "article-journal book", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title-short", 
+                                    "font-style": "italic"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "locator", 
+                                    "prefix": ", article ", 
+                                    "suffix": "."
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "legislation", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "publisher"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": "(", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {
+                                        "delimiter": " "
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "name", 
+                                              "attrs": {
+                                                "form": "short"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "names", 
+                                          "attrs": {
+                                            "variable": "author"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": " (", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "bill", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "container-title", 
+                                            "suffix": ","
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "prefix": " '", 
+                                            "suffix": "'", 
+                                            "text-case": "title"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "names", 
+                                          "attrs": {
+                                            "variable": "author", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "prefix": "'", 
+                                            "suffix": "'", 
+                                            "text-case": "title"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "article-newspaper", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "name", 
+                                      "attrs": {
+                                        "form": "short"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": " (", 
+                                    "suffix": ")", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "chapter", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "italic"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "paper-conference", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "publisher"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "name", 
+                                          "attrs": {
+                                            "form": "short"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "names", 
+                                      "attrs": {
+                                        "variable": "author"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "date", 
+                              "attrs": {
+                                "variable": "issued", 
+                                "prefix": " (", 
+                                "suffix": ")", 
+                                "form": "text", 
+                                "date-parts": "year"
+                              }
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "report", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "italic", 
+                                    "text-case": "title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": " (", 
+                                    "suffix": ")", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": ", para "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "locator": "paragraph", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": ", at"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "else-if", 
+                                      "attrs": {
+                                        "locator": "page", 
+                                        "match": "any"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "position": "subsequent"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "prefix": ", '", 
+                                    "text-case": "title", 
+                                    "suffix": "',", 
+                                    "font-style": "normal"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": " (", 
+                                    "suffix": ")", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "volume", 
+                                    "prefix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "prefix": " ", 
+                                    "suffix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "page"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "locator", 
+                                    "prefix": ", at "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "prefix": " available at: <", 
+                                    "suffix": ">"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "type": "article-journal", 
+                            "match": "all"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "names", 
+                                          "attrs": {
+                                            "variable": "editor", 
+                                            "suffix": " (ed.)"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "prefix": ", ", 
+                                            "font-style": "italic", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "volume", 
+                                                    "prefix": ", vol. "
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "volume", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "abstract", 
+                                            "prefix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": " (", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", at ", 
+                                                            "suffix": "."
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "locator": "page", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", paragraph ", 
+                                                            "suffix": "."
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "locator", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "editor", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "names", 
+                                          "attrs": {
+                                            "variable": "author", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "font-style": "italic", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "volume", 
+                                                    "prefix": ", vol. "
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "volume", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "abstract", 
+                                            "prefix": ","
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": " (", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", at  "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "locator": "page", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", paragraph "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "locator", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "book", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "prefix": ", '", 
+                                    "font-style": "normal", 
+                                    "suffix": "', "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "term": "in", 
+                                    "font-style": "normal", 
+                                    "suffix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "editor", 
+                                    "suffix": " (ed.),"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "prefix": " ", 
+                                    "font-style": "italic", 
+                                    "suffix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": "(", 
+                                    "suffix": "),", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "page-first", 
+                                    "prefix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "locator", 
+                                    "prefix": " at "
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "chapter", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "font-style": "normal", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "abstract", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "collection-title", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "container-title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "page", 
+                                            "prefix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", para. "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "locator": "paragraph", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", page "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else-if", 
+                                                      "attrs": {
+                                                        "locator": "page", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "locator", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "issue", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "container-title", 
+                                            "prefix": "CJEU ", 
+                                            "suffix": ","
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "prefix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": ", ", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", para. "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "locator": "paragraph", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", at", 
+                                                            "suffix": "."
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "locator", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else-if", 
+                                  "attrs": {
+                                    "variable": "volume", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "font-style": "italic"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "abstract", 
+                                            "prefix": ", ", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "container-title", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "publisher", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "collection-title", 
+                                            "prefix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", para. "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "locator": "paragraph", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", page "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "locator", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "legal_case", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "suffix": " ", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "volume", 
+                                        "suffix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "collection-title", 
+                                        "suffix": " "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "page"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title-short", 
+                                            "prefix": " [", 
+                                            "suffix": "]"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "title-short", 
+                                        "match": "any"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": ", article "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "locator", 
+                                        "match": "any"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "legislation", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "publisher", 
+                                            "suffix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "suffix": ", ", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "genre"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "date", 
+                                                  "attrs": {
+                                                    "variable": "issued", 
+                                                    "prefix": " (", 
+                                                    "suffix": ")", 
+                                                    "form": "text", 
+                                                    "date-parts": "year"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "locator", 
+                                                    "prefix": ", at ", 
+                                                    "suffix": "."
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "locator": "page paragraph", 
+                                                "match": "any"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "date", 
+                                                  "attrs": {
+                                                    "variable": "issued", 
+                                                    "prefix": " (", 
+                                                    "suffix": ")", 
+                                                    "form": "text", 
+                                                    "date-parts": "year"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "else", 
+                                              "attrs": {}
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "names", 
+                                          "attrs": {
+                                            "variable": "author", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "suffix": ", ", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "genre", 
+                                            "suffix": " "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": "(", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else-if", 
+                                  "attrs": {
+                                    "variable": "publisher container-title", 
+                                    "match": "none"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "names", 
+                                                  "attrs": {
+                                                    "variable": "author", 
+                                                    "suffix": ", "
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "title", 
+                                                    "suffix": ", ", 
+                                                    "text-case": "title"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "date", 
+                                                  "attrs": {
+                                                    "variable": "issued", 
+                                                    "suffix": " YILC, ", 
+                                                    "form": "text", 
+                                                    "date-parts": "year"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "container-title", 
+                                                            "suffix": ""
+                                                          }
+                                                        }, 
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "edition", 
+                                                            "prefix": " (", 
+                                                            "suffix": ")"
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "variable": "edition", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "container-title"
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }, 
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "page", 
+                                                            "prefix": ", "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "variable": "page", 
+                                                        "match": "any"
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "group", 
+                                              "attrs": {}
+                                            }
+                                          ], 
+                                          "name": "if", 
+                                          "attrs": {
+                                            "variable": "volume", 
+                                            "match": "any"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "title", 
+                                                    "suffix": ", ", 
+                                                    "text-case": "title"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "date", 
+                                                  "attrs": {
+                                                    "variable": "issued", 
+                                                    "suffix": " YILC, ", 
+                                                    "form": "text", 
+                                                    "date-parts": "year"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "suffix": " "
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "edition", 
+                                                    "prefix": "(", 
+                                                    "suffix": ")", 
+                                                    "text-case": "title"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "group", 
+                                              "attrs": {}
+                                            }
+                                          ], 
+                                          "name": "else", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "choose", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else-if", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "publisher", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "font-style": "italic", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "prefix": ", "
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "container-title", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "genre", 
+                                                    "prefix": ", "
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "genre", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": " (", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", article "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "locator": "paragraph", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": " volume "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else-if", 
+                                                      "attrs": {
+                                                        "locator": "volume", 
+                                                        "match": "any"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "locator", 
+                                                            "prefix": ", at "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "else", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "locator", 
+                                                "match": "any"
+                                              }
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "bill", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "publisher", 
+                                                "suffix": ", "
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "title", 
+                                                "prefix": "'", 
+                                                "font-style": "normal", 
+                                                "suffix": "'"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "text", 
+                                                      "attrs": {
+                                                        "variable": "container-title", 
+                                                        "prefix": ", in: ", 
+                                                        "font-style": "italic"
+                                                      }
+                                                    }, 
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [
+                                                            {
+                                                              "children": [], 
+                                                              "name": "text", 
+                                                              "attrs": {
+                                                                "term": "editor", 
+                                                                "prefix": " "
+                                                              }
+                                                            }
+                                                          ], 
+                                                          "name": "if", 
+                                                          "attrs": {
+                                                            "variable": "editor", 
+                                                            "match": "any"
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "choose", 
+                                                      "attrs": {}
+                                                    }
+                                                  ], 
+                                                  "name": "if", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "match": "any"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "choose", 
+                                              "attrs": {}
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "text", 
+                                                      "attrs": {
+                                                        "variable": "collection-title", 
+                                                        "prefix": ", "
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "if", 
+                                                  "attrs": {
+                                                    "variable": "collection-title", 
+                                                    "match": "any"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "choose", 
+                                              "attrs": {}
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "text", 
+                                                      "attrs": {
+                                                        "variable": "genre", 
+                                                        "prefix": ", "
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "if", 
+                                                  "attrs": {
+                                                    "variable": "genre", 
+                                                    "match": "any"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "choose", 
+                                              "attrs": {}
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "date", 
+                                              "attrs": {
+                                                "variable": "issued", 
+                                                "prefix": ", ", 
+                                                "form": "text", 
+                                                "date-parts": "year-month"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "number", 
+                                              "attrs": {
+                                                "variable": "number-of-pages", 
+                                                "prefix": ", "
+                                              }
+                                            }
+                                          ], 
+                                          "name": "group", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "publisher", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "names", 
+                                              "attrs": {
+                                                "variable": "author"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "title", 
+                                                "prefix": ", '", 
+                                                "font-style": "normal", 
+                                                "suffix": "'"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "container-title", 
+                                                "prefix": ", in: ", 
+                                                "font-style": "italic"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "text", 
+                                                      "attrs": {
+                                                        "term": "editor", 
+                                                        "prefix": " "
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "if", 
+                                                  "attrs": {
+                                                    "variable": "editor", 
+                                                    "match": "any"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "choose", 
+                                              "attrs": {}
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "text", 
+                                                      "attrs": {
+                                                        "variable": "collection-title", 
+                                                        "prefix": ", "
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "if", 
+                                                  "attrs": {
+                                                    "variable": "collection-title", 
+                                                    "match": "any"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "choose", 
+                                              "attrs": {}
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [], 
+                                                      "name": "text", 
+                                                      "attrs": {
+                                                        "variable": "genre", 
+                                                        "prefix": ", "
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "if", 
+                                                  "attrs": {
+                                                    "variable": "genre", 
+                                                    "match": "any"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "choose", 
+                                              "attrs": {}
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "date", 
+                                              "attrs": {
+                                                "variable": "issued", 
+                                                "prefix": ", ", 
+                                                "form": "text", 
+                                                "date-parts": "year-month"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [], 
+                                              "name": "number", 
+                                              "attrs": {
+                                                "variable": "number-of-pages", 
+                                                "prefix": ", "
+                                              }
+                                            }
+                                          ], 
+                                          "name": "group", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "else-if", 
+                                      "attrs": {
+                                        "variable": "container-title", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "font-weight": "bold", 
+                                            "value": "REPORT WITHOUT PUBLISHER OR AUTHOR"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "else", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "report", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "font-style": "normal", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "volume", 
+                                    "prefix": "vol. ", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "italic", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "genre", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "page"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "paper-conference", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "prefix": "'", 
+                                    "text-case": "title", 
+                                    "suffix": "'", 
+                                    "font-style": "normal"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "prefix": ", ", 
+                                    "font-style": "italic"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": ", ", 
+                                    "form": "text"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "prefix": ", available at <", 
+                                    "suffix": ">"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "accessed", 
+                                    "prefix": " (last accessed ", 
+                                    "suffix": ")", 
+                                    "form": "text"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "type": "article-newspaper", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "value": "Not supported"
+                              }
+                            }
+                          ], 
+                          "name": "else", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {
+            "delimiter": "; "
+          }
+        }
+      ], 
+      "name": "citation", 
+      "attrs": {
+        "and": "symbol", 
+        "et-al-min": "3", 
+        "initialize-with": ".", 
+        "et-al-use-first": "1"
+      }
+    }, 
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "author"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title", 
+                            "prefix": ", '", 
+                            "text-case": "title", 
+                            "suffix": "',", 
+                            "font-style": "normal"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "issued", 
+                            "prefix": " (", 
+                            "suffix": ")", 
+                            "form": "text", 
+                            "date-parts": "year"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "volume", 
+                            "prefix": " "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title", 
+                            "prefix": " ", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "page", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "prefix": " available at <", 
+                                    "suffix": ">."
+                                  }
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "abstract", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "page", 
+                                    "suffix": "."
+                                  }
+                                }
+                              ], 
+                              "name": "else", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "if", 
+                  "attrs": {
+                    "type": "article-journal", 
+                    "match": "all"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "editor", 
+                                    "suffix": " (ed.)"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "prefix": ", ", 
+                                    "font-style": "italic", 
+                                    "text-case": "title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "prefix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": " (", 
+                                    "suffix": ").", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "variable": "editor", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "italic", 
+                                    "text-case": "title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "prefix": ","
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": " (", 
+                                    "suffix": ").", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "book", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "normal", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "collection-title", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "page", 
+                                    "prefix": " ", 
+                                    "suffix": "."
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "variable": "issue", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "prefix": "CJEU ", 
+                                    "suffix": ","
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "prefix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": ", ", 
+                                    "suffix": ".", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "variable": "volume", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "italic"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "abstract", 
+                                    "prefix": ", ", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "container-title", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "collection-title", 
+                                    "prefix": " ", 
+                                    "suffix": "."
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "legal_case", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "issued", 
+                            "suffix": " ", 
+                            "form": "text", 
+                            "date-parts": "year"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "volume", 
+                                "suffix": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "collection-title", 
+                                "suffix": " "
+                              }
+                            }, 
+                            {
+                              "children": [], 
+                              "name": "text", 
+                              "attrs": {
+                                "variable": "page", 
+                                "suffix": "."
+                              }
+                            }
+                          ], 
+                          "name": "group", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "legislation", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "suffix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "genre"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": " (", 
+                                            "suffix": ")", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "locator", 
+                                            "prefix": ", at ", 
+                                            "suffix": "."
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "locator": "page paragraph", 
+                                        "match": "any"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "prefix": " (", 
+                                            "suffix": ").", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "else", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "if", 
+                          "attrs": {
+                            "variable": "publisher", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "names", 
+                                  "attrs": {
+                                    "variable": "author", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "suffix": ", ", 
+                                    "text-case": "title"
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "genre", 
+                                    "suffix": " "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": "(", 
+                                    "suffix": ").", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "variable": "publisher container-title", 
+                            "match": "none"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "names", 
+                                          "attrs": {
+                                            "variable": "author", 
+                                            "suffix": ", "
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "suffix": ", ", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "suffix": " YILC, ", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "suffix": " "
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "edition", 
+                                                    "prefix": "(", 
+                                                    "suffix": ")"
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "children": [
+                                                        {
+                                                          "children": [], 
+                                                          "name": "text", 
+                                                          "attrs": {
+                                                            "variable": "page", 
+                                                            "prefix": ", "
+                                                          }
+                                                        }
+                                                      ], 
+                                                      "name": "if", 
+                                                      "attrs": {
+                                                        "variable": "page", 
+                                                        "match": "any"
+                                                      }
+                                                    }
+                                                  ], 
+                                                  "name": "choose", 
+                                                  "attrs": {}
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "edition", 
+                                                "match": "any"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "suffix": "."
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "else", 
+                                              "attrs": {}
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {
+                                        "suffix": "."
+                                      }
+                                    }
+                                  ], 
+                                  "name": "if", 
+                                  "attrs": {
+                                    "variable": "volume", 
+                                    "match": "any"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "title", 
+                                            "suffix": ", ", 
+                                            "text-case": "title"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [], 
+                                          "name": "date", 
+                                          "attrs": {
+                                            "variable": "issued", 
+                                            "suffix": " YILC, ", 
+                                            "form": "text", 
+                                            "date-parts": "year"
+                                          }
+                                        }, 
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "suffix": " "
+                                                  }
+                                                }, 
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "edition", 
+                                                    "prefix": "(", 
+                                                    "suffix": ").", 
+                                                    "text-case": "title"
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "if", 
+                                              "attrs": {
+                                                "variable": "edition", 
+                                                "match": "any"
+                                              }
+                                            }, 
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [], 
+                                                  "name": "text", 
+                                                  "attrs": {
+                                                    "variable": "container-title", 
+                                                    "suffix": "."
+                                                  }
+                                                }
+                                              ], 
+                                              "name": "else", 
+                                              "attrs": {}
+                                            }
+                                          ], 
+                                          "name": "choose", 
+                                          "attrs": {}
+                                        }
+                                      ], 
+                                      "name": "group", 
+                                      "attrs": {}
+                                    }
+                                  ], 
+                                  "name": "else", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "choose", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else-if", 
+                          "attrs": {
+                            "variable": "container-title", 
+                            "match": "any"
+                          }
+                        }, 
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "publisher", 
+                                    "suffix": ", "
+                                  }
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "variable": "title", 
+                                    "font-style": "italic", 
+                                    "text-case": "title"
+                                  }
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "container-title", 
+                                            "prefix": ", "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "container-title", 
+                                        "match": "any"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [], 
+                                          "name": "text", 
+                                          "attrs": {
+                                            "variable": "genre", 
+                                            "prefix": ", "
+                                          }
+                                        }
+                                      ], 
+                                      "name": "if", 
+                                      "attrs": {
+                                        "variable": "genre", 
+                                        "match": "any"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "choose", 
+                                  "attrs": {}
+                                }, 
+                                {
+                                  "children": [], 
+                                  "name": "date", 
+                                  "attrs": {
+                                    "variable": "issued", 
+                                    "prefix": " (", 
+                                    "suffix": ").", 
+                                    "form": "text", 
+                                    "date-parts": "year"
+                                  }
+                                }
+                              ], 
+                              "name": "group", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "else", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "choose", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "bill", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "author", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title", 
+                            "prefix": "'", 
+                            "text-case": "title", 
+                            "suffix": "'", 
+                            "font-style": "normal"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title", 
+                            "prefix": ", ", 
+                            "font-style": "italic"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "issued", 
+                            "prefix": ", ", 
+                            "form": "text"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "abstract", 
+                            "prefix": ", available at <", 
+                            "suffix": ">."
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "article-newspaper", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "author"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title", 
+                            "prefix": ", '", 
+                            "font-style": "normal", 
+                            "suffix": "', "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "term": "in", 
+                            "font-style": "normal", 
+                            "suffix": " "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "names", 
+                          "attrs": {
+                            "variable": "editor", 
+                            "suffix": " (ed.),"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title", 
+                            "prefix": " ", 
+                            "font-style": "italic", 
+                            "suffix": " "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "date", 
+                          "attrs": {
+                            "variable": "issued", 
+                            "prefix": "(", 
+                            "suffix": "),", 
+                            "form": "text", 
+                            "date-parts": "year"
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "page-first", 
+                            "prefix": " ", 
+                            "suffix": "."
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "chapter", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "publisher", 
+                                        "suffix": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "title", 
+                                        "font-style": "italic"
+                                      }
+                                    }, 
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [], 
+                                              "name": "text", 
+                                              "attrs": {
+                                                "variable": "collection-title", 
+                                                "prefix": ", "
+                                              }
+                                            }
+                                          ], 
+                                          "name": "if", 
+                                          "attrs": {
+                                            "variable": "collection-title", 
+                                            "match": "any"
+                                          }
+                                        }
+                                      ], 
+                                      "name": "choose", 
+                                      "attrs": {}
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date", 
+                                      "attrs": {
+                                        "variable": "issued", 
+                                        "prefix": ", ", 
+                                        "suffix": ".", 
+                                        "form": "text", 
+                                        "date-parts": "year-month"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "if", 
+                              "attrs": {
+                                "variable": "publisher", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [], 
+                                      "name": "names", 
+                                      "attrs": {
+                                        "variable": "author", 
+                                        "suffix": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "title", 
+                                        "font-style": "italic", 
+                                        "suffix": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "text", 
+                                      "attrs": {
+                                        "variable": "container-title", 
+                                        "prefix": "published in: ", 
+                                        "suffix": ", "
+                                      }
+                                    }, 
+                                    {
+                                      "children": [], 
+                                      "name": "date", 
+                                      "attrs": {
+                                        "variable": "issued", 
+                                        "suffix": ".", 
+                                        "form": "text", 
+                                        "date-parts": "year-month"
+                                      }
+                                    }
+                                  ], 
+                                  "name": "group", 
+                                  "attrs": {}
+                                }
+                              ], 
+                              "name": "else-if", 
+                              "attrs": {
+                                "variable": "container-title", 
+                                "match": "any"
+                              }
+                            }, 
+                            {
+                              "children": [
+                                {
+                                  "children": [], 
+                                  "name": "text", 
+                                  "attrs": {
+                                    "font-weight": "bold", 
+                                    "value": "REPORT WITHOUT PUBLISHER OR AUTHOR"
+                                  }
+                                }
+                              ], 
+                              "name": "else", 
+                              "attrs": {}
+                            }
+                          ], 
+                          "name": "choose", 
+                          "attrs": {}
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "report", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "container-title", 
+                            "font-style": "normal", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "volume", 
+                            "prefix": "vol. ", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title", 
+                            "font-style": "italic", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "genre", 
+                            "suffix": ", "
+                          }
+                        }, 
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "page", 
+                            "suffix": "."
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "paper-conference", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [], 
+                          "name": "text", 
+                          "attrs": {
+                            "variable": "title"
+                          }
+                        }
+                      ], 
+                      "name": "group", 
+                      "attrs": {}
+                    }
+                  ], 
+                  "name": "else-if", 
+                  "attrs": {
+                    "type": "report", 
+                    "match": "any"
+                  }
+                }, 
+                {
+                  "children": [
+                    {
+                      "children": [], 
+                      "name": "text", 
+                      "attrs": {
+                        "value": "Else"
+                      }
+                    }
+                  ], 
+                  "name": "else", 
+                  "attrs": {}
+                }
+              ], 
+              "name": "choose", 
+              "attrs": {}
+            }
+          ], 
+          "name": "layout", 
+          "attrs": {}
+        }
+      ], 
+      "name": "bibliography", 
+      "attrs": {
+        "et-al-min": "3", 
+        "et-al-use-first": "1", 
+        "subsequent-author-substitute": "\u2014\u2014"
+      }
+    }
+  ], 
+  "name": "style", 
+  "attrs": {
+    "and": "symbol", 
+    "default-locale": "en-GB", 
+    "xmlns": "http://purl.org/net/xbiblio/csl", 
+    "initialize-with": ".", 
+    "initialize-with-hyphen": "false", 
+    "version": "1.0", 
+    "sort-separator": " ", 
+    "demote-non-dropping-particle": "never", 
+    "class": "note"
+  }
+}
