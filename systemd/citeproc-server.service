@@ -1,0 +1,13 @@
+[Unit]
+Description=citeproc-server
+After=network.target
+
+[Service]
+Type=simple
+User=citeproc-server
+Group=citeproc-server
+ExecStart=/usr/bin/node /opt/citeproc-server/lib/citeServer.js &>> /var/log/citeproc-server/citeproc-server.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
