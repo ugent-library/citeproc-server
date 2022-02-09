@@ -1,0 +1,14 @@
+[Unit]
+Description=citeproc-server
+After=network.target
+
+[Service]
+Type=simple
+User=citeproc-server
+Group=citeproc-server
+# /bin/bash used in order to support file redirection
+ExecStart=/bin/bash -c "cd /opt/citeproc-server && /usr/bin/node lib/citeServer.js 1>> /var/log/citeproc-server/citeproc-server.log 2> /var/log/citeproc-server/citeproc-server.error"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

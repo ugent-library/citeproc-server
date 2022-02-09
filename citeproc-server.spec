@@ -20,11 +20,11 @@ echo "nothing to build"
 rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/opt/%{name}
-mkdir -p %{buildroot}/etc/init.d
+mkdir -p %{buildroot}/etc/systemd/system/
 mkdir -p %{buildroot}/var/log/%{name}
 
 cp -r $RPM_BUILD_DIR/%{name}/* %{buildroot}/opt/%{name}/
-cp $RPM_BUILD_DIR/%{name}/init.d/%{name} %{buildroot}/etc/init.d/%{name}
+cp $RPM_BUILD_DIR/%{name}/systemd/%{name}.service %{buildroot}/etc/systemd/system/
 
 echo "Complete!"
 
@@ -34,7 +34,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 /opt/%{name}/
-%attr(755, -, -) /etc/init.d/%{name}
+%attr(444, -, -) /etc/systemd/system/%{name}.service
 %attr(744, %{name}, citeproc-server) /var/log/%{name}
 
 %doc
@@ -43,27 +43,21 @@ rm -rf %{buildroot}
 getent group %{name} >/dev/null || groupadd %{name}
 getent passwd %{name} >/dev/null || useradd -g %{name} -s /sbin/nologin -c "citeproc server user" %{name}
 
-#in case of an upgrade (first installs new version, then deletes old version)
-has_service=$(chkconfig --list | grep %{name})
-if [ "$has_service" != "" ];then
-  chkconfig --del %{name} &> /dev/null
-fi
-
 exit 0
 
 %post
-(
-cd /opt/%name &&
-chkconfig --add %{name} && chkconfig --level 345 %{name} on &&
-echo "service %{name} installed!"
-) || exit 1
+systemctl daemon-reload &&
+systemctl enable citeproc-server &&
+systemctl restart citeproc-server
+
+exit 0
 
 %preun
 if [ "$1" = 0 ] ; then
-  chkconfig --del %{name} &> /dev/null
-  /usr/sbin/userdel -r %{name} &> /dev/null
-  echo "service %{name} removed"
+  systemctl stop citeproc-server
+  systemctl disable citeproc-server
 fi
+
 exit 0
 
 %postun
