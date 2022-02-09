@@ -6,7 +6,8 @@ After=network.target
 Type=simple
 User=citeproc-server
 Group=citeproc-server
-ExecStart=/usr/bin/node /opt/citeproc-server/lib/citeServer.js &>> /var/log/citeproc-server/citeproc-server.log
+# /bin/bash used in order to support file redirection
+ExecStart=/bin/bash -c "cd /opt/citeproc-server && /usr/bin/node lib/citeServer.js 1>> /var/log/citeproc-server/citeproc-server.log 2> /var/log/citeproc-server/citeproc-server.error"
 Restart=always
 
 [Install]
