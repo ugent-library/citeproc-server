@@ -1,3 +1,4 @@
+# note: override config via node config env variables (https://github.com/node-config/node-config/wiki/Environment-Variables)
 FROM node:17.9-alpine3.14
 WORKDIR /dist
 COPY csl/dependent dependent
