@@ -5,7 +5,8 @@ Version: 0.1
 Release: X
 BuildArch: x86_64
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
-Requires: nodejs,npm
+Requires: nodejs >= 16.17.0
+Requires: npm
 Source: %{name}.tar.gz
 
 %description
